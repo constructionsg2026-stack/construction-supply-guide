@@ -5,42 +5,139 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construction Supply Guide | Electrical & Sundries Suppliers</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #222; }
-    header { background: #1f3a5f; color: #fff; padding: 28px 20px; }
-    header h1 { margin: 0 0 6px; font-size: 28px; }
-    header p { margin: 0; opacity: 0.9; }
-    nav { background: #16304f; padding: 12px 20px; }
-    nav a { color: #fff; text-decoration: none; margin-right: 18px; }
-    main { max-width: 900px; margin: 30px auto; padding: 0 20px; }
-    .card { background: #fff; padding: 20px; margin-bottom: 16px; border-radius: 8px; }
-    h2 { margin-top: 0; color: #1f3a5f; }
-    h3 { margin-bottom: 8px; color: #333; }
-    ul { line-height: 1.8; }
-    footer { text-align: center; padding: 24px; color: #666; font-size: 14px; }
+    :root {
+      --navy: #16324f;
+      --navy-dark: #0f2438;
+      --accent: #e67a2e;
+      --bg: #f3f5f7;
+      --card: #ffffff;
+      --text: #1c2430;
+      --muted: #5b6775;
+      --line: #e4e8ed;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    header {
+      background: linear-gradient(180deg, var(--navy-dark), var(--navy));
+      color: #fff;
+      padding: 28px 20px 24px;
+    }
+    .wrap { max-width: 980px; margin: 0 auto; }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 14px;
+      background: #fff;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: -0.3px;
+    }
+    .brand p {
+      margin: 4px 0 0;
+      color: #d7dee6;
+      font-size: 15px;
+    }
+    nav {
+      background: var(--navy-dark);
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+    }
+    nav .wrap a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 18px;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    nav .wrap a:hover { color: var(--accent); }
+    main { padding: 28px 20px 40px; }
+    .intro {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 18px;
+    }
+    .intro h2 { margin: 0 0 8px; }
+    .intro p { margin: 0; color: var(--muted); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 22px;
+    }
+    h3 {
+      margin: 16px 0 8px;
+      font-size: 15px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+    h3:first-of-type { margin-top: 0; }
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+    li { margin: 6px 0; }
+    a { color: var(--navy); }
+    a:hover { color: var(--accent); }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: var(--muted);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Construction Supply Guide</h1>
-    <p>A practical directory of electrical and sundries suppliers for construction professionals</p>
+    <div class="wrap brand">
+      <img src="/logo.jpg" alt="Construction Supply Guide logo">
+      <div>
+        <h1>Construction Supply Guide</h1>
+        <p>Electrical, sundries, and safety suppliers for construction professionals</p>
+      </div>
+    </div>
   </header>
 
   <nav>
-    <a href="/">Home</a>
-    <a href="#electrical">Electrical</a>
-    <a href="#sundries">Sundries</a>
-    <a href="#regions">Regions</a>
+    <div class="wrap">
+      <a href="/">Home</a>
+      <a href="#electrical">Electrical</a>
+      <a href="#sundries">Sundries</a>
+      <a href="#safety">Safety</a>
+      <a href="#regions">Regions</a>
+    </div>
   </nav>
 
-  <main>
-    <div class="card">
+  <main class="wrap">
+    <div class="intro">
       <h2>Find the right supplier faster</h2>
-      <p>Construction Supply Guide is a curated directory of electrical distributors and construction sundries suppliers across the United States. Built for construction managers, project managers, and procurement teams.</p>
+      <p>A curated directory of electrical distributors, construction sundries suppliers, and safety sources across the United States. Built for construction managers, project managers, and procurement teams.</p>
     </div>
 
     <div class="card" id="electrical">
       <h2>Electrical Distributors</h2>
-
       <h3>National</h3>
       <ul>
         <li><a href="/suppliers/wesco">Wesco</a></li>
@@ -49,7 +146,6 @@
         <li><a href="/suppliers/sonepar">Sonepar</a></li>
         <li><a href="/suppliers/ced">CED</a></li>
       </ul>
-
       <h3>Regional</h3>
       <ul>
         <li><a href="/suppliers/border-states">Border States Electric</a></li>
@@ -71,6 +167,34 @@
         <li><a href="/suppliers/grainger">Grainger</a></li>
         <li><a href="/suppliers/fastenal">Fastenal</a></li>
         <li><a href="/suppliers/msc">MSC Industrial Supply</a></li>
+      </ul>
+    </div>
+
+    <div class="card" id="safety">
+      <h2>Safety</h2>
+      <h3>PPE &amp; Safety Distributors</h3>
+      <ul>
+        <li><a href="/suppliers/quad-city-safety">Quad City Safety</a></li>
+        <li><a href="/suppliers/vallen">Vallen</a></li>
+        <li><a href="/suppliers/magid">Magid Glove &amp; Safety</a></li>
+        <li><a href="/suppliers/mallory-safety">Mallory Safety &amp; Supply</a></li>
+        <li><a href="/suppliers/safeware">Safeware</a></li>
+        <li><a href="/suppliers/aramsco">Aramsco</a></li>
+        <li><a href="/suppliers/orr-safety">Orr Safety</a></li>
+        <li><a href="/suppliers/northern-safety">Northern Safety</a></li>
+        <li><a href="/suppliers/us-safety-gear">US Safety Gear</a></li>
+      </ul>
+      <h3>Jobsite &amp; Specialty Safety</h3>
+      <ul>
+        <li><a href="/suppliers/white-cap">White Cap</a></li>
+        <li><a href="/suppliers/airgas">Airgas</a></li>
+        <li><a href="/suppliers/brady">Brady</a></li>
+      </ul>
+      <h3>Boots, Workwear &amp; Local Surplus</h3>
+      <ul>
+        <li><a href="/suppliers/red-wing">Red Wing Shoes</a></li>
+        <li><a href="/suppliers/boot-barn">Boot Barn</a></li>
+        <li><a href="/suppliers/army-navy-surplus">Army-Navy &amp; Surplus Stores</a></li>
       </ul>
     </div>
 
