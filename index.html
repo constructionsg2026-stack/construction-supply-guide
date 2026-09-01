@@ -11,86 +11,36 @@
   <meta property="og:image" content="https://constructionsupplyguide.com/og-image.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <style>
-    :root {
-      --navy: #16324f;
-      --navy-dark: #0f2438;
-      --accent: #e67a2e;
-      --bg: #f3f5f7;
-      --card: #ffffff;
-      --text: #1c2430;
-      --muted: #5b6775;
-      --line: #e4e8ed;
-    }
-    * { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.55;
-    }
-    header {
-      background: linear-gradient(180deg, var(--navy-dark), var(--navy));
-      color: #fff;
-      padding: 28px 20px 24px;
-    }
-    .wrap { max-width: 980px; margin: 0 auto; }
-    .brand { display: flex; align-items: center; gap: 16px; }
-    .brand img {
-      width: 64px; height: 64px; object-fit: cover;
-      border-radius: 14px; background: #fff;
-    }
-    .brand h1 { margin: 0; font-size: 28px; letter-spacing: -0.3px; }
-    .brand p { margin: 4px 0 0; color: #d7dee6; font-size: 15px; }
-    nav {
-      background: var(--navy-dark);
-      padding: 12px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 20;
-    }
-    nav .wrap a {
-      color: #fff; text-decoration: none; margin-right: 16px;
-      font-size: 14px; font-weight: bold;
-    }
-    nav .wrap a:hover { color: var(--accent); }
-    main { padding: 28px 20px 40px; }
-    .intro, .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 22px;
-      margin-bottom: 16px;
-    }
-    .intro h2, .card h2 { margin: 0 0 12px; font-size: 22px; }
-    .intro p { margin: 0; color: var(--muted); }
-    h3 {
-      margin: 16px 0 8px;
-      font-size: 15px;
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.6px;
-    }
-    h3:first-of-type { margin-top: 0; }
-    ul { margin: 0; padding-left: 18px; }
-    li { margin: 6px 0; }
-    a { color: var(--navy); }
-    a:hover { color: var(--accent); }
-    .region-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
-    .region-jump a {
-      display: inline-block;
-      background: var(--navy);
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: bold;
-    }
-    .region-jump a:hover { background: var(--accent); color: #fff; }
-    .region { scroll-margin-top: 64px; }
-    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
+    :root { --navy:#16324f; --navy-dark:#0f2438; --accent:#e67a2e; --bg:#f3f5f7; --card:#fff; --text:#1c2430; --muted:#5b6775; --line:#e4e8ed; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; background:var(--bg); color:var(--text); line-height:1.5; }
+    header { background:linear-gradient(180deg,var(--navy-dark),var(--navy)); color:#fff; padding:28px 20px 24px; }
+    .wrap { max-width:980px; margin:0 auto; }
+    .brand { display:flex; align-items:center; gap:16px; }
+    .brand img { width:64px; height:64px; object-fit:cover; border-radius:14px; background:#fff; }
+    .brand h1 { margin:0; font-size:28px; letter-spacing:-0.3px; }
+    .brand p { margin:4px 0 0; color:#d7dee6; font-size:15px; }
+    nav { background:var(--navy-dark); padding:12px 20px; position:sticky; top:0; z-index:20; }
+    nav .wrap a { color:#fff; text-decoration:none; margin-right:16px; font-size:14px; font-weight:bold; }
+    nav .wrap a:hover { color:var(--accent); }
+    main { padding:28px 20px 40px; }
+    .intro, .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; margin-bottom:16px; }
+    .intro h2, .card h2 { margin:0 0 12px; font-size:22px; }
+    .intro p { margin:0; color:var(--muted); }
+    h3 { margin:20px 0 10px; font-size:14px; color:var(--accent); text-transform:uppercase; letter-spacing:0.6px; }
+    h3:first-of-type { margin-top:0; }
+    .sup { border-top:1px solid var(--line); padding:12px 0; }
+    .sup:first-of-type { border-top:0; padding-top:0; }
+    .sup strong { display:block; font-size:16px; color:var(--navy); }
+    .sup p { margin:4px 0 6px; color:var(--muted); font-size:14px; }
+    .sup a { color:var(--accent); font-size:13px; font-weight:bold; text-decoration:none; }
+    .sup a:hover { text-decoration:underline; }
+    .region-jump { display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 16px; }
+    .region-jump a { display:inline-block; background:var(--navy); color:#fff; text-decoration:none; padding:8px 12px; border-radius:999px; font-size:13px; font-weight:bold; }
+    .region-jump a:hover { background:var(--accent); color:#fff; }
+    .region { scroll-margin-top:64px; }
+    footer { text-align:center; padding:24px; color:var(--muted); font-size:13px; }
   </style>
 </head>
 <body>
@@ -103,7 +53,6 @@
       </div>
     </div>
   </header>
-
   <nav>
     <div class="wrap">
       <a href="/">Home</a>
@@ -115,128 +64,100 @@
       <a href="#regions">Regions</a>
     </div>
   </nav>
-
   <main class="wrap">
     <div class="intro">
       <h2>Find the right supplier faster</h2>
       <p>A curated directory of electrical distributors, construction sundries suppliers, safety sources, and elevator-parts houses across the United States. Built for construction managers, project managers, and procurement teams.</p>
     </div>
-
     <div class="card" id="electrical">
       <h2>Electrical Distributors</h2>
       <h3>National</h3>
-      <ul>
-        <li><a href="/suppliers/wesco">Wesco</a></li>
-        <li><a href="/suppliers/graybar">Graybar</a></li>
-        <li><a href="/suppliers/rexel">Rexel USA</a></li>
-        <li><a href="/suppliers/sonepar">Sonepar</a></li>
-        <li><a href="/suppliers/ced">CED</a></li>
-      </ul>
+      <div class="sup"><strong>Wesco</strong><p>National electrical, MRO, and utility distributor. Construction and industrial stock at scale.</p><a href="/suppliers/wesco">Read more</a></div>
+      <div class="sup"><strong>Graybar</strong><p>Employee-owned national electrical and communications distributor. Strong contractor counter network.</p><a href="/suppliers/graybar">Read more</a></div>
+      <div class="sup"><strong>Rexel USA</strong><p>National electrical wholesale for contractors, industrial plants, and energy work.</p><a href="/suppliers/rexel">Read more</a></div>
+      <div class="sup"><strong>Sonepar</strong><p>Global electrical group with U.S. operating companies covering construction and industry.</p><a href="/suppliers/sonepar">Read more</a></div>
+      <div class="sup"><strong>CED</strong><p>Independent member network of local electrical houses. Local inventory with national reach.</p><a href="/suppliers/ced">Read more</a></div>
       <h3>Regional</h3>
-      <ul>
-        <li><a href="/suppliers/border-states">Border States Electric</a></li>
-        <li><a href="/suppliers/elliott-electric">Elliott Electric Supply</a></li>
-        <li><a href="/suppliers/lonestar">Lonestar Electric Supply</a></li>
-        <li><a href="/suppliers/city-electric">City Electric Supply</a></li>
-        <li><a href="/suppliers/mcnaughton-mckay">McNaughton-McKay</a></li>
-        <li><a href="/suppliers/turtle-hughes">Turtle &amp; Hughes</a></li>
-        <li><a href="/suppliers/usesi">U.S. Electrical Services</a></li>
-        <li><a href="/suppliers/green-mountain">Green Mountain Electric Supply</a></li>
-        <li><a href="/suppliers/granite-city">Granite City Electric Supply</a></li>
-        <li><a href="/suppliers/independent-electric">Independent Electric Supply</a></li>
-        <li><a href="/suppliers/platt">Platt Electric Supply</a></li>
-        <li><a href="/suppliers/van-meter">Van Meter Inc.</a></li>
-        <li><a href="/suppliers/united-electric">United Electric Supply</a></li>
-        <li><a href="/suppliers/shepherd-electric">Shepherd Electric Supply</a></li>
-        <li><a href="/suppliers/state-electric">State Electric Supply</a></li>
-      </ul>
+      <div class="sup"><strong>Border States Electric</strong><p>Upper Midwest and Mountain West electrical supply. Utility and contractor focus.</p><a href="/suppliers/border-states">Read more</a></div>
+      <div class="sup"><strong>Elliott Electric Supply</strong><p>Texas-rooted electrical wholesaler with a wide South-Central branch footprint.</p><a href="/suppliers/elliott-electric">Read more</a></div>
+      <div class="sup"><strong>Lonestar Electric Supply</strong><p>Texas contractor electrical house. Fast jobsite fill-in when the nationals are slow.</p><a href="/suppliers/lonestar">Read more</a></div>
+      <div class="sup"><strong>City Electric Supply</strong><p>Southeast and Sun Belt electrical distributor with a contractor-counter model.</p><a href="/suppliers/city-electric">Read more</a></div>
+      <div class="sup"><strong>McNaughton-McKay</strong><p>Great Lakes electrical and automation distributor. Michigan and Ohio strength.</p><a href="/suppliers/mcnaughton-mckay">Read more</a></div>
+      <div class="sup"><strong>Turtle &amp; Hughes</strong><p>Northeast electrical distributor and supply-chain partner for construction and industry.</p><a href="/suppliers/turtle-hughes">Read more</a></div>
+      <div class="sup"><strong>U.S. Electrical Services</strong><p>New England electrical wholesaler serving contractors and industrial accounts.</p><a href="/suppliers/usesi">Read more</a></div>
+      <div class="sup"><strong>Green Mountain Electric Supply</strong><p>Vermont and northern New England electrical supply. Local stock for rural and metro jobs.</p><a href="/suppliers/green-mountain">Read more</a></div>
+      <div class="sup"><strong>Granite City Electric Supply</strong><p>Massachusetts electrical house. Boston-area contractor and project support.</p><a href="/suppliers/granite-city">Read more</a></div>
+      <div class="sup"><strong>Independent Electric Supply</strong><p>California electrical distributor. Bay Area and statewide contractor coverage.</p><a href="/suppliers/independent-electric">Read more</a></div>
+      <div class="sup"><strong>Platt Electric Supply</strong><p>Pacific Northwest and West electrical wholesaler. Wire, gear, lighting, jobsite stock.</p><a href="/suppliers/platt">Read more</a></div>
+      <div class="sup"><strong>Van Meter Inc.</strong><p>Employee-owned Midwest electrical house based in Cedar Rapids. Automation and contractor supply.</p><a href="/suppliers/van-meter">Read more</a></div>
+      <div class="sup"><strong>United Electric Supply</strong><p>Employee-owned Mid-Atlantic electrical distributor. DE, PA, MD, NJ, and Northern Virginia.</p><a href="/suppliers/united-electric">Read more</a></div>
+      <div class="sup"><strong>Shepherd Electric Supply</strong><p>Baltimore and Washington electrical wholesaler. Contractor, lighting, and gear desks.</p><a href="/suppliers/shepherd-electric">Read more</a></div>
+      <div class="sup"><strong>State Electric Supply</strong><p>Huntington-based electrical distributor covering West Virginia, Ohio, and Kentucky.</p><a href="/suppliers/state-electric">Read more</a></div>
     </div>
-
     <div class="card" id="sundries">
       <h2>Sundries &amp; MRO</h2>
       <h3>National</h3>
-      <ul>
-        <li><a href="/suppliers/grainger">Grainger</a></li>
-        <li><a href="/suppliers/fastenal">Fastenal</a></li>
-        <li><a href="/suppliers/msc">MSC Industrial Supply</a></li>
-        <li><a href="/suppliers/mcmaster-carr">McMaster-Carr</a></li>
-        <li><a href="/suppliers/uline">Uline</a></li>
-        <li><a href="/suppliers/lawson-products">Lawson Products</a></li>
-        <li><a href="/suppliers/wurth">Würth</a></li>
-        <li><a href="/suppliers/winsupply">Winsupply</a></li>
-      </ul>
+      <div class="sup"><strong>Grainger</strong><p>National MRO catalog and branches. Fasteners, tools, PPE, and maintenance stock.</p><a href="/suppliers/grainger">Read more</a></div>
+      <div class="sup"><strong>Fastenal</strong><p>Jobsite bins, fasteners, and vending. Useful when the trailer needs restocked daily.</p><a href="/suppliers/fastenal">Read more</a></div>
+      <div class="sup"><strong>MSC Industrial Supply</strong><p>National industrial catalog. Cutting tools, abrasives, and shop supplies.</p><a href="/suppliers/msc">Read more</a></div>
+      <div class="sup"><strong>McMaster-Carr</strong><p>Same-day odd-part specialist. Hardware, fittings, and the thing nobody else has.</p><a href="/suppliers/mcmaster-carr">Read more</a></div>
+      <div class="sup"><strong>Uline</strong><p>Packaging, material handling, and facility supplies. Fast shipping, broad catalog.</p><a href="/suppliers/uline">Read more</a></div>
+      <div class="sup"><strong>Lawson Products</strong><p>MRO and fastener programs for shops and field crews.</p><a href="/suppliers/lawson-products">Read more</a></div>
+      <div class="sup"><strong>Würth</strong><p>Jobsite fasteners, chemicals, and inventory systems for contractors.</p><a href="/suppliers/wurth">Read more</a></div>
+      <div class="sup"><strong>Winsupply</strong><p>Independent wholesale network. Plumbing, HVAC, electrical, and related construction lines.</p><a href="/suppliers/winsupply">Read more</a></div>
       <h3>New York</h3>
-      <ul>
-        <li><a href="/suppliers/cmf">CMF (Carter, Milchman &amp; Frank)</a></li>
-        <li><a href="/suppliers/tanner-bolt">Tanner Bolt &amp; Nut</a></li>
-        <li><a href="/suppliers/colony-hardware">Colony Hardware</a></li>
-      </ul>
+      <div class="sup"><strong>CMF (Carter, Milchman &amp; Frank)</strong><p>NYC construction sundries house. Fasteners, tools, and jobsite fill-in for metro work.</p><a href="/suppliers/cmf">Read more</a></div>
+      <div class="sup"><strong>Tanner Bolt &amp; Nut</strong><p>Brooklyn fastener and construction hardware specialist.</p><a href="/suppliers/tanner-bolt">Read more</a></div>
+      <div class="sup"><strong>Colony Hardware</strong><p>Tools and contractor supplies. Now in the White Cap family; still a known NYC/Northeast name.</p><a href="/suppliers/colony-hardware">Read more</a></div>
       <h3>Los Angeles &amp; Seattle</h3>
-      <ul>
-        <li><a href="/suppliers/acme-construction-supply">Acme Construction Supply</a></li>
-        <li><a href="/suppliers/duncan-bolt">Duncan Bolt</a></li>
-        <li><a href="/suppliers/edge-construction">Edge Construction Supply</a></li>
-      </ul>
+      <div class="sup"><strong>Acme Construction Supply</strong><p>West Coast construction sundries and jobsite materials.</p><a href="/suppliers/acme-construction-supply">Read more</a></div>
+      <div class="sup"><strong>Duncan Bolt</strong><p>Southern California fastener house for construction and industrial accounts.</p><a href="/suppliers/duncan-bolt">Read more</a></div>
+      <div class="sup"><strong>Edge Construction Supply</strong><p>Pacific Northwest construction supply. Tools, fasteners, and jobsite goods.</p><a href="/suppliers/edge-construction">Read more</a></div>
       <h3>Dallas, Atlanta &amp; South Florida</h3>
-      <ul>
-        <li><a href="/suppliers/commercial-tool-fastener">Commercial Tool &amp; Fastener</a></li>
-        <li><a href="/suppliers/pioneer-fasteners">Pioneer Fasteners &amp; Tools</a></li>
-        <li><a href="/suppliers/dixie-construction">Dixie Construction Products</a></li>
-        <li><a href="/suppliers/prime-industrial">Prime Industrial Fasteners</a></li>
-      </ul>
-      <h3>Added this week</h3>
-      <ul>
-        <li><a href="/suppliers/brock-white">Brock White</a></li>
-        <li><a href="/suppliers/new-south">New South Construction Supply</a></li>
-        <li><a href="/suppliers/atlas-construction-supply">Atlas Construction Supply</a></li>
-        <li><a href="/suppliers/emery-waterhouse">Emery-Waterhouse</a></li>
-        <li><a href="/suppliers/construction-midwest">Construction Midwest</a></li>
-      </ul>
+      <div class="sup"><strong>Commercial Tool &amp; Fastener</strong><p>Texas contractor fasteners and tools.</p><a href="/suppliers/commercial-tool-fastener">Read more</a></div>
+      <div class="sup"><strong>Pioneer Fasteners &amp; Tools</strong><p>Dallas-area fasteners and construction hardware.</p><a href="/suppliers/pioneer-fasteners">Read more</a></div>
+      <div class="sup"><strong>Dixie Construction Products</strong><p>Atlanta construction specialties and jobsite materials.</p><a href="/suppliers/dixie-construction">Read more</a></div>
+      <div class="sup"><strong>Prime Industrial Fasteners</strong><p>South Florida industrial and construction fasteners.</p><a href="/suppliers/prime-industrial">Read more</a></div>
+      <h3>Other regions</h3>
+      <div class="sup"><strong>Brock White</strong><p>Upper Midwest construction specialties. Concrete, masonry, and waterproofing.</p><a href="/suppliers/brock-white">Read more</a></div>
+      <div class="sup"><strong>New South Construction Supply</strong><p>Carolinas, Georgia, and North Florida concrete, masonry, and rebar.</p><a href="/suppliers/new-south">Read more</a></div>
+      <div class="sup"><strong>Atlas Construction Supply</strong><p>California and Southwest forming, shoring, and concrete accessories.</p><a href="/suppliers/atlas-construction-supply">Read more</a></div>
+      <div class="sup"><strong>Emery-Waterhouse</strong><p>New England hardlines wholesaler. Hardware, fasteners, tools, and building products.</p><a href="/suppliers/emery-waterhouse">Read more</a></div>
+      <div class="sup"><strong>Construction Midwest</strong><p>Minneapolis construction materials. Estimating help and metro jobsite delivery.</p><a href="/suppliers/construction-midwest">Read more</a></div>
     </div>
-
     <div class="card" id="safety">
       <h2>Safety</h2>
       <h3>PPE &amp; Safety Distributors</h3>
-      <ul>
-        <li><a href="/suppliers/quad-city-safety">Quad City Safety</a></li>
-        <li><a href="/suppliers/vallen">Vallen</a></li>
-        <li><a href="/suppliers/magid">Magid Glove &amp; Safety</a></li>
-        <li><a href="/suppliers/mallory-safety">Mallory Safety &amp; Supply</a></li>
-        <li><a href="/suppliers/safeware">Safeware</a></li>
-        <li><a href="/suppliers/aramsco">Aramsco</a></li>
-        <li><a href="/suppliers/orr-safety">Orr Safety</a></li>
-        <li><a href="/suppliers/northern-safety">Northern Safety</a></li>
-        <li><a href="/suppliers/us-safety-gear">US Safety Gear</a></li>
-      </ul>
+      <div class="sup"><strong>Quad City Safety</strong><p>Midwest safety distributor. PPE, training support, and industrial safety stock.</p><a href="/suppliers/quad-city-safety">Read more</a></div>
+      <div class="sup"><strong>Vallen</strong><p>National safety and facility services. PPE programs for large contractors.</p><a href="/suppliers/vallen">Read more</a></div>
+      <div class="sup"><strong>Magid Glove &amp; Safety</strong><p>Gloves, PPE, and hand-protection programs for construction and industry.</p><a href="/suppliers/magid">Read more</a></div>
+      <div class="sup"><strong>Mallory Safety &amp; Supply</strong><p>West Coast safety distributor. PPE and industrial safety for PNW and beyond.</p><a href="/suppliers/mallory-safety">Read more</a></div>
+      <div class="sup"><strong>Safeware</strong><p>Mid-Atlantic safety and emergency-response supplier.</p><a href="/suppliers/safeware">Read more</a></div>
+      <div class="sup"><strong>Aramsco</strong><p>Environmental, restoration, and specialty safety supplies.</p><a href="/suppliers/aramsco">Read more</a></div>
+      <div class="sup"><strong>Orr Safety</strong><p>Midwest and South safety distributor. PPE and compliance products.</p><a href="/suppliers/orr-safety">Read more</a></div>
+      <div class="sup"><strong>Northern Safety</strong><p>Catalog and branch safety supplier. PPE, first aid, and facility safety.</p><a href="/suppliers/northern-safety">Read more</a></div>
+      <div class="sup"><strong>US Safety Gear</strong><p>Construction-focused PPE and work-gear source.</p><a href="/suppliers/us-safety-gear">Read more</a></div>
       <h3>Jobsite &amp; Specialty Safety</h3>
-      <ul>
-        <li><a href="/suppliers/white-cap">White Cap</a></li>
-        <li><a href="/suppliers/airgas">Airgas</a></li>
-        <li><a href="/suppliers/brady">Brady</a></li>
-      </ul>
+      <div class="sup"><strong>White Cap</strong><p>Jobsite construction supply and safety. Concrete accessories, tools, and PPE.</p><a href="/suppliers/white-cap">Read more</a></div>
+      <div class="sup"><strong>Airgas</strong><p>Welding gases, PPE, and safety consumables on commercial jobs.</p><a href="/suppliers/airgas">Read more</a></div>
+      <div class="sup"><strong>Brady</strong><p>Lockout/tagout, labels, and identification products for LOTO programs.</p><a href="/suppliers/brady">Read more</a></div>
       <h3>Boots, Workwear &amp; Local Surplus</h3>
-      <ul>
-        <li><a href="/suppliers/red-wing">Red Wing Shoes</a></li>
-        <li><a href="/suppliers/boot-barn">Boot Barn</a></li>
-        <li><a href="/suppliers/army-navy-surplus">Army-Navy &amp; Surplus Stores</a></li>
-      </ul>
+      <div class="sup"><strong>Red Wing Shoes</strong><p>Safety footwear. Composite and steel-toe boots used across commercial sites.</p><a href="/suppliers/red-wing">Read more</a></div>
+      <div class="sup"><strong>Boot Barn</strong><p>Work boots and workwear with wide retail coverage.</p><a href="/suppliers/boot-barn">Read more</a></div>
+      <div class="sup"><strong>Army-Navy &amp; Surplus Stores</strong><p>Local fill-in for boots, rain gear, and basic PPE when the job cannot wait.</p><a href="/suppliers/army-navy-surplus">Read more</a></div>
     </div>
-
     <div class="card" id="elevator">
       <h2>Elevator &amp; Motors</h2>
-      <ul>
-        <li><a href="/suppliers/mega-elevator-parts">MEGA Elevator Parts</a></li>
-        <li><a href="/suppliers/prime-electric-motor">Prime Electric Motor</a></li>
-        <li><a href="/suppliers/ced-elevator">CED Elevator &amp; Electrical</a></li>
-        <li><a href="/suppliers/adams-elevator">Adams Elevator</a></li>
-        <li><a href="/suppliers/delco-elevator">Delco Elevator Products</a></li>
-        <li><a href="/suppliers/north-east-escalator">North East Escalator Parts</a></li>
-      </ul>
+      <div class="sup"><strong>MEGA Elevator Parts</strong><p>Elevator components and replacement parts for modernization and service work.</p><a href="/suppliers/mega-elevator-parts">Read more</a></div>
+      <div class="sup"><strong>Prime Electric Motor</strong><p>Electric motors and related rotating equipment for construction and building systems.</p><a href="/suppliers/prime-electric-motor">Read more</a></div>
+      <div class="sup"><strong>CED Elevator &amp; Electrical</strong><p>Elevator and electrical materials through the CED network.</p><a href="/suppliers/ced-elevator">Read more</a></div>
+      <div class="sup"><strong>Adams Elevator</strong><p>Elevator parts and accessories for service and construction teams.</p><a href="/suppliers/adams-elevator">Read more</a></div>
+      <div class="sup"><strong>Delco Elevator Products</strong><p>Elevator product house for replacement and project material.</p><a href="/suppliers/delco-elevator">Read more</a></div>
+      <div class="sup"><strong>North East Escalator Parts</strong><p>Northeast escalator and moving-walk parts support.</p><a href="/suppliers/north-east-escalator">Read more</a></div>
     </div>
-
     <div class="card" id="regions">
       <h2>Browse by Region</h2>
-      <p class="intro" style="border:0;padding:0;margin:0 0 12px;background:transparent;">Jump to suppliers that actually cover that part of the country.</p>
+      <p style="margin:0;color:#5b6775;">Same companies, grouped by where they actually cover.</p>
       <div class="region-jump">
         <a href="#region-northeast">New England / NYC / Mid-Atlantic</a>
         <a href="#region-southeast">Southeast</a>
@@ -245,76 +166,56 @@
         <a href="#region-pnw">Pacific Northwest</a>
         <a href="#region-california">California</a>
       </div>
-
       <div class="region" id="region-northeast">
         <h3>New England / NYC / Mid-Atlantic</h3>
-        <ul>
-          <li><a href="/suppliers/turtle-hughes">Turtle &amp; Hughes</a></li>
-          <li><a href="/suppliers/green-mountain">Green Mountain Electric Supply</a></li>
-          <li><a href="/suppliers/granite-city">Granite City Electric Supply</a></li>
-          <li><a href="/suppliers/independent-electric">Independent Electric Supply</a></li>
-          <li><a href="/suppliers/united-electric">United Electric Supply</a></li>
-          <li><a href="/suppliers/shepherd-electric">Shepherd Electric Supply</a></li>
-          <li><a href="/suppliers/cmf">CMF</a></li>
-          <li><a href="/suppliers/tanner-bolt">Tanner Bolt &amp; Nut</a></li>
-          <li><a href="/suppliers/colony-hardware">Colony Hardware</a></li>
-          <li><a href="/suppliers/emery-waterhouse">Emery-Waterhouse</a></li>
-        </ul>
+        <div class="sup"><strong>Turtle &amp; Hughes</strong><p>Northeast electrical distributor.</p><a href="/suppliers/turtle-hughes">Read more</a></div>
+        <div class="sup"><strong>Green Mountain Electric Supply</strong><p>Vermont and northern New England electrical.</p><a href="/suppliers/green-mountain">Read more</a></div>
+        <div class="sup"><strong>Granite City Electric Supply</strong><p>Massachusetts contractor electrical.</p><a href="/suppliers/granite-city">Read more</a></div>
+        <div class="sup"><strong>United Electric Supply</strong><p>DE, PA, MD, NJ, Northern Virginia electrical.</p><a href="/suppliers/united-electric">Read more</a></div>
+        <div class="sup"><strong>Shepherd Electric Supply</strong><p>Baltimore and Washington electrical.</p><a href="/suppliers/shepherd-electric">Read more</a></div>
+        <div class="sup"><strong>CMF</strong><p>NYC construction sundries.</p><a href="/suppliers/cmf">Read more</a></div>
+        <div class="sup"><strong>Tanner Bolt &amp; Nut</strong><p>Brooklyn fasteners and hardware.</p><a href="/suppliers/tanner-bolt">Read more</a></div>
+        <div class="sup"><strong>Colony Hardware</strong><p>Northeast tools and contractor supply.</p><a href="/suppliers/colony-hardware">Read more</a></div>
+        <div class="sup"><strong>Emery-Waterhouse</strong><p>New England hardlines wholesale.</p><a href="/suppliers/emery-waterhouse">Read more</a></div>
       </div>
-
       <div class="region" id="region-southeast">
         <h3>Southeast</h3>
-        <ul>
-          <li><a href="/suppliers/city-electric">City Electric Supply</a></li>
-          <li><a href="/suppliers/dixie-construction">Dixie Construction Products</a></li>
-          <li><a href="/suppliers/new-south">New South Construction Supply</a></li>
-          <li><a href="/suppliers/state-electric">State Electric Supply</a></li>
-        </ul>
+        <div class="sup"><strong>City Electric Supply</strong><p>Sun Belt electrical counters.</p><a href="/suppliers/city-electric">Read more</a></div>
+        <div class="sup"><strong>Dixie Construction Products</strong><p>Atlanta construction specialties.</p><a href="/suppliers/dixie-construction">Read more</a></div>
+        <div class="sup"><strong>New South Construction Supply</strong><p>Carolinas, Georgia, North Florida concrete and masonry.</p><a href="/suppliers/new-south">Read more</a></div>
+        <div class="sup"><strong>State Electric Supply</strong><p>West Virginia, Ohio, Kentucky electrical.</p><a href="/suppliers/state-electric">Read more</a></div>
       </div>
-
       <div class="region" id="region-midwest">
         <h3>Midwest</h3>
-        <ul>
-          <li><a href="/suppliers/mcnaughton-mckay">McNaughton-McKay</a></li>
-          <li><a href="/suppliers/border-states">Border States Electric</a></li>
-          <li><a href="/suppliers/van-meter">Van Meter Inc.</a></li>
-          <li><a href="/suppliers/brock-white">Brock White</a></li>
-          <li><a href="/suppliers/construction-midwest">Construction Midwest</a></li>
-          <li><a href="/suppliers/quad-city-safety">Quad City Safety</a></li>
-        </ul>
+        <div class="sup"><strong>McNaughton-McKay</strong><p>Great Lakes electrical and automation.</p><a href="/suppliers/mcnaughton-mckay">Read more</a></div>
+        <div class="sup"><strong>Border States Electric</strong><p>Upper Midwest and Mountain West electrical.</p><a href="/suppliers/border-states">Read more</a></div>
+        <div class="sup"><strong>Van Meter Inc.</strong><p>Iowa-based employee-owned electrical.</p><a href="/suppliers/van-meter">Read more</a></div>
+        <div class="sup"><strong>Brock White</strong><p>Upper Midwest construction specialties.</p><a href="/suppliers/brock-white">Read more</a></div>
+        <div class="sup"><strong>Construction Midwest</strong><p>Minneapolis construction materials.</p><a href="/suppliers/construction-midwest">Read more</a></div>
+        <div class="sup"><strong>Quad City Safety</strong><p>Midwest PPE and safety.</p><a href="/suppliers/quad-city-safety">Read more</a></div>
       </div>
-
       <div class="region" id="region-texas">
         <h3>Texas</h3>
-        <ul>
-          <li><a href="/suppliers/elliott-electric">Elliott Electric Supply</a></li>
-          <li><a href="/suppliers/lonestar">Lonestar Electric Supply</a></li>
-          <li><a href="/suppliers/commercial-tool-fastener">Commercial Tool &amp; Fastener</a></li>
-          <li><a href="/suppliers/pioneer-fasteners">Pioneer Fasteners &amp; Tools</a></li>
-        </ul>
+        <div class="sup"><strong>Elliott Electric Supply</strong><p>Texas and South-Central electrical.</p><a href="/suppliers/elliott-electric">Read more</a></div>
+        <div class="sup"><strong>Lonestar Electric Supply</strong><p>Texas contractor electrical.</p><a href="/suppliers/lonestar">Read more</a></div>
+        <div class="sup"><strong>Commercial Tool &amp; Fastener</strong><p>Texas fasteners and tools.</p><a href="/suppliers/commercial-tool-fastener">Read more</a></div>
+        <div class="sup"><strong>Pioneer Fasteners &amp; Tools</strong><p>Dallas-area fasteners.</p><a href="/suppliers/pioneer-fasteners">Read more</a></div>
       </div>
-
       <div class="region" id="region-pnw">
         <h3>Pacific Northwest</h3>
-        <ul>
-          <li><a href="/suppliers/platt">Platt Electric Supply</a></li>
-          <li><a href="/suppliers/edge-construction">Edge Construction Supply</a></li>
-          <li><a href="/suppliers/mallory-safety">Mallory Safety &amp; Supply</a></li>
-        </ul>
+        <div class="sup"><strong>Platt Electric Supply</strong><p>PNW and West electrical.</p><a href="/suppliers/platt">Read more</a></div>
+        <div class="sup"><strong>Edge Construction Supply</strong><p>Pacific Northwest jobsite supply.</p><a href="/suppliers/edge-construction">Read more</a></div>
+        <div class="sup"><strong>Mallory Safety &amp; Supply</strong><p>West Coast PPE and safety.</p><a href="/suppliers/mallory-safety">Read more</a></div>
       </div>
-
       <div class="region" id="region-california">
         <h3>California</h3>
-        <ul>
-          <li><a href="/suppliers/independent-electric">Independent Electric Supply</a></li>
-          <li><a href="/suppliers/acme-construction-supply">Acme Construction Supply</a></li>
-          <li><a href="/suppliers/duncan-bolt">Duncan Bolt</a></li>
-          <li><a href="/suppliers/atlas-construction-supply">Atlas Construction Supply</a></li>
-        </ul>
+        <div class="sup"><strong>Independent Electric Supply</strong><p>California electrical distributor.</p><a href="/suppliers/independent-electric">Read more</a></div>
+        <div class="sup"><strong>Acme Construction Supply</strong><p>West Coast construction sundries.</p><a href="/suppliers/acme-construction-supply">Read more</a></div>
+        <div class="sup"><strong>Duncan Bolt</strong><p>Southern California fasteners.</p><a href="/suppliers/duncan-bolt">Read more</a></div>
+        <div class="sup"><strong>Atlas Construction Supply</strong><p>Forming, shoring, and concrete accessories.</p><a href="/suppliers/atlas-construction-supply">Read more</a></div>
       </div>
     </div>
   </main>
-
   <footer>Construction Supply Guide &copy; 2026</footer>
 </body>
 </html>
