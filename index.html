@@ -22,6 +22,7 @@
       --line: #e4e8ed;
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
@@ -35,60 +36,35 @@
       padding: 28px 20px 24px;
     }
     .wrap { max-width: 980px; margin: 0 auto; }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
+    .brand { display: flex; align-items: center; gap: 16px; }
     .brand img {
-      width: 64px;
-      height: 64px;
-      object-fit: cover;
-      border-radius: 14px;
-      background: #fff;
+      width: 64px; height: 64px; object-fit: cover;
+      border-radius: 14px; background: #fff;
     }
-    .brand h1 {
-      margin: 0;
-      font-size: 28px;
-      letter-spacing: -0.3px;
-    }
-    .brand p {
-      margin: 4px 0 0;
-      color: #d7dee6;
-      font-size: 15px;
-    }
+    .brand h1 { margin: 0; font-size: 28px; letter-spacing: -0.3px; }
+    .brand p { margin: 4px 0 0; color: #d7dee6; font-size: 15px; }
     nav {
       background: var(--navy-dark);
       padding: 12px 20px;
       position: sticky;
       top: 0;
+      z-index: 20;
     }
     nav .wrap a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 18px;
-      font-size: 14px;
-      font-weight: bold;
+      color: #fff; text-decoration: none; margin-right: 16px;
+      font-size: 14px; font-weight: bold;
     }
     nav .wrap a:hover { color: var(--accent); }
     main { padding: 28px 20px 40px; }
-    .intro {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 24px;
-      margin-bottom: 18px;
-    }
-    .intro h2 { margin: 0 0 8px; }
-    .intro p { margin: 0; color: var(--muted); }
-    .card {
+    .intro, .card {
       background: var(--card);
       border: 1px solid var(--line);
       border-radius: 14px;
       padding: 22px;
       margin-bottom: 16px;
     }
-    h2 { margin: 0 0 14px; font-size: 22px; }
+    .intro h2, .card h2 { margin: 0 0 12px; font-size: 22px; }
+    .intro p { margin: 0; color: var(--muted); }
     h3 {
       margin: 16px 0 8px;
       font-size: 15px;
@@ -101,12 +77,20 @@
     li { margin: 6px 0; }
     a { color: var(--navy); }
     a:hover { color: var(--accent); }
-    footer {
-      text-align: center;
-      padding: 24px;
-      color: var(--muted);
+    .region-jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+    .region-jump a {
+      display: inline-block;
+      background: var(--navy);
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 999px;
       font-size: 13px;
+      font-weight: bold;
     }
+    .region-jump a:hover { background: var(--accent); color: #fff; }
+    .region { scroll-margin-top: 64px; }
+    footer { text-align: center; padding: 24px; color: var(--muted); font-size: 13px; }
   </style>
 </head>
 <body>
@@ -160,6 +144,11 @@
         <li><a href="/suppliers/green-mountain">Green Mountain Electric Supply</a></li>
         <li><a href="/suppliers/granite-city">Granite City Electric Supply</a></li>
         <li><a href="/suppliers/independent-electric">Independent Electric Supply</a></li>
+        <li><a href="/suppliers/platt">Platt Electric Supply</a></li>
+        <li><a href="/suppliers/van-meter">Van Meter Inc.</a></li>
+        <li><a href="/suppliers/united-electric">United Electric Supply</a></li>
+        <li><a href="/suppliers/shepherd-electric">Shepherd Electric Supply</a></li>
+        <li><a href="/suppliers/state-electric">State Electric Supply</a></li>
       </ul>
     </div>
 
@@ -194,6 +183,14 @@
         <li><a href="/suppliers/pioneer-fasteners">Pioneer Fasteners &amp; Tools</a></li>
         <li><a href="/suppliers/dixie-construction">Dixie Construction Products</a></li>
         <li><a href="/suppliers/prime-industrial">Prime Industrial Fasteners</a></li>
+      </ul>
+      <h3>Added this week</h3>
+      <ul>
+        <li><a href="/suppliers/brock-white">Brock White</a></li>
+        <li><a href="/suppliers/new-south">New South Construction Supply</a></li>
+        <li><a href="/suppliers/atlas-construction-supply">Atlas Construction Supply</a></li>
+        <li><a href="/suppliers/emery-waterhouse">Emery-Waterhouse</a></li>
+        <li><a href="/suppliers/construction-midwest">Construction Midwest</a></li>
       </ul>
     </div>
 
@@ -239,19 +236,7 @@
 
     <div class="card" id="regions">
       <h2>Browse by Region</h2>
-      <ul>
-        <li>New England / NYC Metro</li>
-        <li>Southeast</li>
-        <li>Midwest</li>
-        <li>Texas</li>
-        <li>Pacific Northwest</li>
-        <li>California</li>
-      </ul>
-    </div>
-  </main>
-
-  <footer>
-    Construction Supply Guide &copy; 2026
-  </footer>
-</body>
-</html>
+      <p class="intro" style="border:0;padding:0;margin:0 0 12px;background:transparent;">Jump to suppliers that actually cover that part of the country.</p>
+      <div class="region-jump">
+        <a href="#region-northeast">New England / NYC / Mid-Atlantic</a>
+        <a href="#region-southeast">Southeast</a>
